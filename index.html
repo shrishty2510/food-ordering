@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1133px)" href="phone.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&family=Noto+Sans+JP:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id='logo'>
+            <img src='logo2.png' alt='myonlinemeal.com' width=90px />
+
+        </div>
+        <ul>
+            <li class="item"><a href="#home"> Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#contact-section">ContactUs</a></li>
+            <!-- <li class="item"><a href="#">Login</a></li>-->
+            <li><a class="item" data-target="#mymodal" style="cursor: pointer;" data-toggle="modal">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!--<button class="btn btn-success" data-target="#mymodal" data-toggle="modal">click</button>-->
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-primary bg-light " style="padding-left:38%;">signup</h2>
+                        <button type="button" data-dismiss="modal" class="close">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label><i class="fa fa-user fa-1x" aria-hidden="true"></i>
+                                    Username:</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa fa-lock fa-1x"></i>
+                                    Password:</label>
+                                <input type="password" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fa fa-lock fa-1x"></i>
+                                    Confirm password:</label>
+                                <input type="password" class="form-control" />
+                            </div>
+                        </form>
+                        <p><span><input type="checkbox" style="display: inline;"></span> I agree all the term and
+                            conditions.</p>
+
+                        <div class="modal-footer  justify-content-center">
+
+                            <button type="button" class="btn btn-danger " data-dismiss="modal">login</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id='home'>
+        <h1 class="h-primary"> Welcome to My Online Meal</h1>
+        <p>One of the first online food delivery options launched in India, Food Panda has its presence across 50
+            countries worldwide.</p>
+
+        <button class="btnnn">order now</button>
+    </section><hr>
+    <section class="services-container">
+        <h1 class="h-primary center" style='color:black' ;>Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src='fast1.jpeg' width="280px" />
+                <h2 class="h-secondary center">Fast Food</h2>
+                <p class='text-center'>Dishes of italian consisting of a flattened disk of bread dough topped with some
+                    combination of oregano, tomato, mozzarella or other cheese, many other ingredients.</p>
+            </div>
+
+            <div class="box">
+                <img src='FOOD1.jpeg' />
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class='text-center'>Meals include several different types of food, such as grains, vegetables, fruit,
+                    meat. Meals have different name they are taken by the type of food that is eaten.</p>
+            </div>
+
+            <div class="box">
+                <img src='d2.jpeg' />
+                <h2 class="h-secondary center" height='180px'> Food Delivery</h2>
+                <p class='text-center'> Our delivery service provides fast, often same-day delivery, within a particular
+                    area.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center" style="color:black;">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src='apple.jpeg' width='110px' />
+            </div>
+            <div class="client-item">
+                <img src='hp.png' />
+            </div>
+            <div class="client-item">
+                <img src='ms.png' />
+            </div>
+            <div class="client-item">
+                <img src='skype.png' />
+            </div>
+        </div>
+
+    </section>
+    <section id="contact-section" style="position: relative; ">
+        <h1 class="h-primary center" style="color: black;">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for='name'>Name: </label>
+                    <input type="text" name='name' id='name' placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for='nam'>Email: </label>
+                    <input type="text" name='name' id='nam' placeholder="enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for='namy'>Mobile no.</label>
+                    <input type="text" name='number' id='namy' placeholder="enter your phone no.">
+                </div>
+                <div class="form-group">
+                    <label for='namm'>Message</label>
+                    <textarea  cols="10" rows="3" id='namm' placeholder="enter your message"></textarea>
+                    <button type='submit' style="margin-left:100%; border-radius: 3px; background-color: brown; color: whitesmoke; padding: 0 8px;">send</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
