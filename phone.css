@@ -5,6 +5,7 @@
  /* Navigation */
 #navbar {
     flex-direction: column;
+    width: 432px;
 }
 
 #navbar ul li a{
@@ -16,10 +17,12 @@
 #home{
     height: 370px; 
     padding: 3px 28px;
+    width: 434px;
 }
 
 #home::before{
     height: 480px; 
+    
 }
 
 #home p{
@@ -35,11 +38,14 @@
     padding: 14px;
     margin: 2px 0px; 
     margin-bottom: 20px;
+    
 }
 
 /* Clients section */
 #clients{
     flex-wrap: wrap;
+    overflow: hidden;
+    
 }
 
 #clients img{
@@ -61,4 +67,18 @@
 .btn{
     font-size: 13px;
     padding: 4px 8px;
+}
+.form-group .for{
+    margin-left: 30%;
+
+}
+#contact-section::before{
+    width: 436px;
+}
+
+footer{
+    width:436px;
+}
+#client-section{
+    margin-left: 16%;
 }
